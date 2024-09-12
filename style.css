@@ -1,0 +1,338 @@
+.uno-uno .flex-container {
+  display: flex;
+  column-gap: 20px;
+}
+
+.uno-uno .card {
+  border: 1px solid black;
+  width: 200px;
+  padding: 5px;
+}
+
+/* ----------------- */
+.uno-dos .flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.uno-dos .card {
+  border: 1px solid black;
+  width: 200px;
+  padding: 5px;
+}
+
+/* ----------------- */
+
+.uno-tres .flex-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.uno-tres .card {
+  border: 1px solid black;
+  padding: 10px;
+  max-width: 200px;
+}
+
+/* ----------------- */
+
+.dos-uno .flex-container {
+  display: flex;
+  column-gap: 20px;
+}
+
+.dos-uno .card {
+  border: 1px solid black;
+  width: 200px;
+}
+
+.dos-uno .card .title {
+  background-color: grey;
+}
+
+.dos-uno .card h2 {
+  margin: 0;
+  text-align: center;
+  padding: 10px;
+}
+
+.dos-uno .card .description p {
+  text-align: justify;
+  padding: 5px;
+}
+
+/* ----------------- */
+
+.dos-dos .flex-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dos-dos .card {
+  border: 1px solid black;
+  max-width: 200px;
+}
+
+.dos-dos .card .title {
+  background-color: grey;
+}
+
+.dos-dos .card h2 {
+  margin: 0;
+  text-align: center;
+  padding: 10px;
+}
+
+.dos-dos .card .description p {
+  text-align: justify;
+  padding: 5px;
+}
+
+
+/* ----------------- */
+.dos-tres .flex-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.dos-tres .card {
+  border: 1px solid black;
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+}
+
+
+.dos-tres .card h2 {
+  margin: 0;
+  text-align: center;
+  padding: 10px;
+  font-size: 70px;
+}
+
+.dos-tres .card .description p {
+  text-align: justify;
+  padding: 5px;
+}
+
+/* ----------------- */
+
+.dos-cuatro .flex-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+
+}
+
+.dos-cuatro .card {
+  border: 1px solid black;
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+}
+
+.dos-cuatro .card .title {
+  border-right: 1px solid black;
+
+}
+
+.dos-cuatro .card h2 {
+  margin: 0;
+  text-align: center;
+  padding: 10px;
+  font-size: 70px;
+}
+
+.dos-cuatro .card .description {
+  background-color: gray;
+
+}
+
+.dos-cuatro .card .description p {
+  text-align: justify;
+  padding: 5px;
+}
+
+
+/* ----------------- */
+
+
+.dos-cinco .flex-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.dos-cinco .card {
+  border: 1px solid black;
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+}
+
+.dos-cinco .card .title {
+  border-right: 1px solid black;
+}
+
+.dos-cinco .card h2 {
+  margin: 0;
+  text-align: center;
+  padding: 10px;
+  font-size: 70px;
+}
+
+.dos-cinco .card .description p {
+  text-align: justify;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+/* ----------------- */
+.tres-uno .flex-container {
+  display: flex;
+  gap: 10px;
+}
+
+.tres-uno .card {
+  border: 1px solid black;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tres-uno .card .title {
+  border-right: 1px solid black;
+}
+
+.tres-uno .card .inner-title {
+  background-color: gray;
+}
+
+.tres-uno .card .inner-title h3 {
+  text-align: center;
+  font-size: 28px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.tres-uno .card h2 {
+  margin: 0;
+  text-align: center;
+  padding: 10px;
+  font-size: 70px;
+}
+
+.tres-uno.card .description p {
+  text-align: justify;
+  padding: 5px;
+}
+
+/* ----------------- */
+.tres-dos .flex-container {
+  display: flex;
+  column-gap: 10px;
+}
+
+.tres-dos .card {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  
+}
+
+.tres-dos .card .inner-title {
+  background-color: gray;
+  border: 1px solid black;
+}
+
+.tres-dos .card .inner-title h3 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.tres-dos .card h2 {
+  margin: 0;
+  text-align: center;
+  padding: 10px;
+  font-size: 70px;
+}
+
+.tres-dos .card .description{
+  border-left: 2px solid black;
+}
+
+.tres-dos.card .description p {
+  text-align: justify;
+  padding: 5px;
+  
+}
+
+/* ----------------- */
+.tres-tres .flex-container {
+  display: flex;
+  column-gap: 10px;
+}
+
+.tres-tres .card {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.tres-tres .title{
+  display: flex;
+  flex-direction: row;
+  background-color: gray;
+
+}
+
+.tres-tres .card .inner-title {
+  background-color: gray;
+  width: 100%;
+}
+
+.tres-tres .card .inner-title h3 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.tres-tres .card h2 {
+  margin: 0;
+  text-align: center;
+  padding: 10px;
+  font-size: 70px;
+  border: 3px solid black;
+  border-bottom-right-radius: 5px;
+}
+
+
+
+.tres-tres.card .description p {
+  text-align: justify;
+  padding: 5px;
+  
+}
+
+/* ----------------- */
+
+
+
+.loginForm form{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  row-gap: 10px;
+}
+
+
+/* ----------------- */
+
+
