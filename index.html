@@ -805,7 +805,6 @@
         <img
           draggable="true"
           ondragstart="drag(event)"
-      
           id="idImagen1"
           src="./img/banana.jpg"
           alt=""
@@ -813,7 +812,6 @@
         <img
           draggable="true"
           ondragstart="drag(event)"
- 
           id="idImagen2"
           src="./img/cereza.jpg"
           alt=""
@@ -821,7 +819,6 @@
         <img
           draggable="true"
           ondragstart="drag(event)"
-     
           id="idImagen3"
           src="./img/manzanaaa.jpg"
           alt=""
@@ -829,7 +826,6 @@
         <img
           draggable="true"
           ondragstart="drag(event)"
-       
           id="idImagen4"
           src="./img/pera.jpg"
           alt=""
@@ -837,7 +833,6 @@
         <img
           draggable="true"
           ondragstart="drag(event)"
-
           id="idImagen5"
           src="./img/nsandia.jpg"
           alt=""
@@ -851,7 +846,7 @@
     </section>
 
     <!-- LISTA DE COMPRAS -->
-     <section class="lista">
+    <section class="lista">
       <h1>Lista de compras</h1>
       <div>
         <div class="carrito">
@@ -869,17 +864,117 @@
 
           <p class="sandia">Sandía 🍉</p>
           <button onclick="addToLista('sandia')">Agregar a lista</button>
+        </div>
+        <h2 id="total">Total acumulado: $0.00</h2>
       </div>
-      </div>
-     </section>
+    </section>
 
+    <!-- WEBWORKER -->
+    <section class="worker">
+      <h1>Subtotales</h1>
+      <button id="start">Iniciar</button>
+      <p id="result"></p>
+    </section>
 
-     <!-- WEBWORKER -->
-      <section class="worker">
-        <h1>Subtotales</h1>
-        <button id="start">Iniciar</button>
-        <p id="result"></p>
+    <h1>
+      ---------------------------------------------------------------------------------------------------------------------------
+    </h1>
+    <h1>FUNCIONALIDADES PARCIAL N°2</h1>
+
+    <div class="div-2do-parcial">
+      <!-- LISTA DE FRUTAS -->
+      <section>
+        <h1>Selecciona tus Frutas</h1>
+        <div class="frutas2">
+          <label
+            ><input type="checkbox" value="1.5" onchange="actualizarTotal()" />
+            Fresa 🍓 - $1.50</label
+          ><br />
+          <label
+            ><input type="checkbox" value="2" onchange="actualizarTotal()" />
+            Cereza 🍒 - $2.00</label
+          ><br />
+          <label
+            ><input type="checkbox" value="3" onchange="actualizarTotal()" />
+            Pera 🍐 - $3.00</label
+          ><br />
+          <label
+            ><input type="checkbox" value="1.8" onchange="actualizarTotal()" />
+            Plátano 🍌 - $1.80</label
+          ><br />
+          <label
+            ><input type="checkbox" value="4" onchange="actualizarTotal()" />
+            Sandía 🍉 - $4.00</label
+          ><br />
+        </div>
+        <div class="total2" id="total2">Total acumulado: $0.00</div>
       </section>
+
+      <!-- MEDIOS DE PAGO -->
+      <section>
+        <div class="medios">
+          <h3>Selecciona tu medio de pago:</h3>
+          <p ondblclick="mostrarFormularioTarjeta()">
+            <img
+              width="48"
+              height="48"
+              src="https://img.icons8.com/color/48/bank-card-back-side.png"
+              alt="bank-card-back-side"
+            />
+          </p>
+
+          <p ondblclick="mostrarFormularioEfectivo()">
+            <img
+              width="48"
+              height="48"
+              src="https://img.icons8.com/color/48/cash.png"
+              alt="cash"
+            />
+          </p>
+        </div>
+      </section>
+
+      <!-- FORMULARIO DE PAGO -->
+      <section>
+        <div class="paymentEfectivo">
+          <h2>Medios de Pago</h2>
+
+          <form id="paymentForm" method="POST" onsubmit="procesarPagoEfectivo(event)">
+            <h3>Información de Pago</h3>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombreEfectivo" name="nombre" required /><br /><br />
+            <label for="">Abona con:</label>
+            <input id="totalEfectivo" type="number" />
+
+            <br /><br />
+            <input type="submit" value="Pagar" />
+          </form>
+        </div>
+      </section>
+
+      <section>
+        <div class="paymentTarjeta">
+          <h2>Medios de Pago</h2>
+
+          <form id="paymentForm" method="POST"  onsubmit="procesarPagoTarjeta(event)">
+            <h3>Información de Pago</h3>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombreTarjeta" name="nombreTarjeta" required /><br /><br />
+            <label for="tarjeta">Número de Tarjeta:</label>
+            <input type="text" id="tarjeta" name="tarjeta" required />
+            <br /><br />
+            <label for="tarjeta">Vencimiento:</label>
+            <input type="text" id="vencimiento" name="tarjeta" required />
+            <br /><br />
+            <label for="tarjeta">Código de seguridad:</label>
+            <input type="text" id="codigo" name="tarjeta" required />
+
+            <br /><br />
+            <input type="submit" value="Pagar" />
+          </form>
+        </div>
+      </section>
+    </div>
 
     <script src="index.js"></script>
   </body>

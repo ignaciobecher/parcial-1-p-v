@@ -244,7 +244,7 @@
   display: flex;
   flex-direction: row;
   width: 300px;
-  
+
 }
 
 .tres-dos .card .inner-title {
@@ -264,14 +264,14 @@
   font-size: 70px;
 }
 
-.tres-dos .card .description{
+.tres-dos .card .description {
   border-left: 2px solid black;
 }
 
 .tres-dos.card .description p {
   text-align: justify;
   padding: 5px;
-  
+
 }
 
 /* ----------------- */
@@ -287,7 +287,7 @@
   width: 300px;
 }
 
-.tres-tres .title{
+.tres-tres .title {
   display: flex;
   flex-direction: row;
   background-color: gray;
@@ -318,14 +318,14 @@
 .tres-tres.card .description p {
   text-align: justify;
   padding: 5px;
-  
+
 }
 
 /* ----------------- */
 
 
 
-.loginForm form{
+.loginForm form {
   display: flex;
   flex-direction: column;
   width: 30%;
@@ -333,6 +333,34 @@
 }
 
 
-/* ----------------- */
+/**-----------------------------------------------------------------SEGUNDO PARCIAL ----------------- */
+.div-2do-parcial{
+  display: flex;
+  flex-direction: row;
+  column-gap: 50px;
+}
+
+.frutas {
+  margin-bottom: 20px;
+}
+
+.total {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.medios {
+  display: block;
+}
+
+.paymentTarjeta {
+  margin-top: 20px;
+  display: none;
+
+}
 
 
+
+.paymentEfectivo{
+  display: none;
+}
