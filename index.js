@@ -53,7 +53,7 @@ function addToLista(fruta) {
     alert(`${fruta} ya está en la lista.`);
   } else {
     listaCompras.push({ nombre: fruta, precio: obtenerPrecio(fruta) });
-    localStorage.setItem("listaCompras", JSON.stringify(listaCompras)); // Guardar en localStorage
+    localStorage.setItem("listaCompras", JSON.stringify(listaCompras)); 
     alert(
       `${fruta} agregada a la lista con un precio de $${obtenerPrecio(
         fruta
